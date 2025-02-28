@@ -34,7 +34,7 @@ const eqObjects = function(object1, object2) {
     return false;
   }
 
-  for (const key in object1) {
+  for (const key of object1) {
     if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
       if (!eqArrays(object1[key], object2[key])) {
         return false;
@@ -45,8 +45,6 @@ const eqObjects = function(object1, object2) {
       }
     }
   }
-
-  return true;
 
 };
 
@@ -62,3 +60,11 @@ const longSleeveMultiColorShirtObject = {
   sleeveLength: "long",
 };
 assertEqual(eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject), false); // => false
+
+const car1 = { make: "tesla", type: "sedan" };
+const car2 = { type: "sedan", make: "tesla" };
+const car3 = {awd: true, type: "sedan", make: "tesla"};
+const car4 = { make: "tesla", color: "sedan" };
+assertEqual(eqObjects(car1, car2), true); // => true
+assertEqual(eqObjects(car2, car3), false); // => false
+assertEqual(eqObjects(car1, car4), false); // => false
