@@ -15,3 +15,4 @@ assertEqual('apple', 'orange');
 assertEqual(8964, 8964);
 
 
+module.exports = assertEqual;

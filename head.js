@@ -1,12 +1,9 @@
 
+const asserEqual = require('./assertEqual');
+
 const head = function(array) {
   return array[0];
 };
 
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: [${actual}] === [${expected}]`);
-  } else {
-    console.log(`❌❌❌ Assertion Failed: [${actual}] !== [${expected}]`);
-  }
-};
+console.log(head([2, 4 ,6 ,8]));
+console.log(head(['apple', 'orange', 'strawberry', 'banana']));
