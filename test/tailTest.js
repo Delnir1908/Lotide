@@ -17,5 +17,10 @@ describe("#tail", () => {
     assert.deepEqual(tail([5, '5']), ['5']); 
   });
 
-
+  it("make sure the original array was not altered by the tail function", () => {
+    const words = ["Yo Yo", "Lighthouse", "Labs"];
+    const result = tail(words);
+    assert.strictEqual(words.length, 3);
+  });
+  
 });
