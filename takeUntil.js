@@ -1,3 +1,4 @@
+/*
 // FUNCTION IMPLEMENTATION
 const eqArrays = function(arr1, arr2) {
 
@@ -24,7 +25,7 @@ const assertArraysEqual = function(actual, expected) {
   
 };
 
-
+*/
 
 
 const takeUntil = function(array, callback) {
@@ -43,12 +44,15 @@ const takeUntil = function(array, callback) {
 
 };
 
+module.exports = takeUntil;
+
+/*
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 assertArraysEqual(takeUntil(data1, x => x > 6), [1, 2, 5]);
 
 const data2 = ['apple', 'orange', 'banana', 'strawberry'];
 assertArraysEqual(takeUntil(data2, item => item.length > 8), ['apple', 'orange', 'banana']);
-
+*/
 
 
 

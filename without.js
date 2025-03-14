@@ -1,3 +1,4 @@
+/*
 // FUNCTION IMPLEMENTATION
 const eqArrays = function(arr1, arr2) {
 
@@ -23,6 +24,7 @@ const assertArraysEqual = function(actual, expected) {
   }
   
 };
+*/
 
 const without = function(source, itemsToRemove) {
   
@@ -43,7 +45,10 @@ const without = function(source, itemsToRemove) {
   return newArray;
 };
 
+module.exports = without;
 
+/*
 assertArraysEqual(without([1, 2, 3], [2]), [1, 3]);
 assertArraysEqual(without(['Lighthouse', 'Labs', 'Coding', 'Finance', 'Chemistry'], ['Chemistry', 'Finance', 'Physics']), ['Lighthouse', 'Labs', 'Coding']);
 assertArraysEqual(without([10, 89, '6', 23], ['6', '23']), [10, 89, 23]);
+*/

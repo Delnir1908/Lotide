@@ -1,3 +1,4 @@
+/*
 // FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
@@ -8,6 +9,9 @@ const assertEqual = function(actual, expected) {
 };
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
+*/
+
+
 const countOnly = function(allItems, itemsToCount) {
 
   let countOnly = {};
@@ -31,9 +35,9 @@ const countOnly = function(allItems, itemsToCount) {
 
 };
 
+module.exports = countOnly;
 
-
-
+/*
 const firstNames = [
   "Karl",
   "Salima",
@@ -57,3 +61,4 @@ assertEqual(result1["Jason"], 1);
 assertEqual(result1["Karima"], undefined);
 assertEqual(result1["Fang"], 2);
 assertEqual(result1["Agouhanna"], undefined);
+*/

@@ -1,3 +1,4 @@
+/*
 // FUNCTION IMPLEMENTATION
 const eqArrays = function(arr1, arr2) {
 
@@ -40,6 +41,9 @@ const eqObjects = function(object1, object2) {
   return true;
 
 };
+*/
+
+const eqObjects = require('./eqObjects');
 
 const assertObjectsEqual = function(actual, expected) {
 
@@ -53,10 +57,10 @@ const assertObjectsEqual = function(actual, expected) {
   
 };
 
+module.exports = assertObjectsEqual;
 
 
-
-
+/*
 
 const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
 const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
@@ -76,3 +80,5 @@ const car4 = { make: "tesla", color: "sedan" };
 assertObjectsEqual(car1, car2);
 assertObjectsEqual(car2, car3);
 assertObjectsEqual(car1, car4);
+
+*/

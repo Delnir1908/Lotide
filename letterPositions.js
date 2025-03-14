@@ -1,3 +1,4 @@
+/*
 // FUNCTION IMPLEMENTATION
 const eqArrays = function(arr1, arr2) {
 
@@ -23,7 +24,7 @@ const assertArraysEqual = function(actual, expected) {
   }
   
 };
-
+*/
 const letterPositions = function(sentence) {
   const results = {};
   // logic to update results here
@@ -44,7 +45,11 @@ const letterPositions = function(sentence) {
   
 };
 
+module.exports = letterPositions;
+
+/*
 let positions = letterPositions('hello world');
 console.log(positions);
 assertArraysEqual(positions['h'],[0]);
 assertArraysEqual(positions['o'],[4,7]);
+*/

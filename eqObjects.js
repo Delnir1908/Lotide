@@ -1,3 +1,4 @@
+/*
 // FUNCTION IMPLEMENTATION
 const eqArrays = function(arr1, arr2) {
 
@@ -21,7 +22,7 @@ const assertEqual = function(actual, expected) {
     console.log(`❌❌❌ Assertion Failed: [${actual}] !== [${expected}]`);
   }
 };
-
+*/
 
 /*
 // Returns true if both objects have identical keys with identical values.
@@ -55,6 +56,8 @@ const eqObjects = function(object1, object2) {
 //base case single level of object and compare
 //nested objects call own function
 
+const eqArrays = require('./eqArrays');
+
 const eqObjects = function(object1, object2) {
   
     let key1Array = Object.keys(object1);
@@ -83,9 +86,9 @@ const eqObjects = function(object1, object2) {
 };
 
 
+module.exports = eqObjects;
 
-
-
+/*
 const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
 const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
 assertEqual(eqObjects(multiColorShirtObject, anotherMultiColorShirtObject), true); // => true
@@ -104,3 +107,4 @@ const car4 = { make: "tesla", color: "sedan" };
 assertEqual(eqObjects(car1, car2), true); // => true
 assertEqual(eqObjects(car2, car3), false); // => false
 assertEqual(eqObjects(car1, car4), false); // => false
+*/
