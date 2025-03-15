@@ -1,28 +1,28 @@
-// FUNCTION IMPLEMENTATION
-const eqArrays = function(arr1, arr2) {
+// // FUNCTION IMPLEMENTATION
+// const eqArrays = function(arr1, arr2) {
 
-  if (arr1.length !== arr2.length) {
-    return false;
-  } 
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
+//   if (arr1.length !== arr2.length) {
+//     return false;
+//   } 
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr1[i] !== arr2[i]) {
+//       return false;
+//     }
+//   }
 
-  return true;
+//   return true;
 
-};
+// };
 
-const assertArraysEqual = function(actual, expected) {
+// const assertArraysEqual = function(actual, expected) {
 
-  if (eqArrays(actual, expected)) {
-    console.log(`✅✅✅ Assertion Passed: [${actual}] === [${expected}]`);
-  } else {
-    console.log(`❌❌❌ Assertion Failed: [${actual}] !== [${expected}]`);
-  }
+//   if (eqArrays(actual, expected)) {
+//     console.log(`✅✅✅ Assertion Passed: [${actual}] === [${expected}]`);
+//   } else {
+//     console.log(`❌❌❌ Assertion Failed: [${actual}] !== [${expected}]`);
+//   }
   
-};
+// };
 
 
 const flatten = function(array) {
@@ -43,19 +43,20 @@ const flatten = function(array) {
 
 };
 
+module.exports = flatten;
 
-let testArray1 = [1, 2, [3, 4], 5];
-let origninalArray1 = testArray1;
-assertArraysEqual(flatten(testArray1), [1, 2, 3, 4, 5]);
-assertArraysEqual(testArray1, origninalArray1);
+// let testArray1 = [1, 2, [3, 4], 5];
+// let origninalArray1 = testArray1;
+// assertArraysEqual(flatten(testArray1), [1, 2, 3, 4, 5]);
+// assertArraysEqual(testArray1, origninalArray1);
 
 
-let testArray2 = ['Banana', 'Pineapple', 'Orange', ['Strawberry', 'BlackBerry', 'Cranberry'], 'peach'];
-let origninalArray2 = testArray2;
-assertArraysEqual(flatten(testArray2), ['Banana', 'Pineapple', 'Orange', 'Strawberry', 'BlackBerry', 'Cranberry', 'peach']);
-assertArraysEqual(testArray2, origninalArray2);
+// let testArray2 = ['Banana', 'Pineapple', 'Orange', ['Strawberry', 'BlackBerry', 'Cranberry'], 'peach'];
+// let origninalArray2 = testArray2;
+// assertArraysEqual(flatten(testArray2), ['Banana', 'Pineapple', 'Orange', 'Strawberry', 'BlackBerry', 'Cranberry', 'peach']);
+// assertArraysEqual(testArray2, origninalArray2);
 
-let testArray3 = [1, 2, [3, 4], 5];
-let origninalArray3 = testArray3;
-assertArraysEqual(flatten(testArray3), [1, 2, '3', 4, 5]);
-assertArraysEqual(testArray3, origninalArray3);
+// let testArray3 = [1, 2, [3, 4], 5];
+// let origninalArray3 = testArray3;
+// assertArraysEqual(flatten(testArray3), [1, 2, '3', 4, 5]);
+// assertArraysEqual(testArray3, origninalArray3);

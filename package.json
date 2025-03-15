@@ -1,15 +1,15 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "name": "@delnir/lotide",
+  "version": "1.0.1",
+  "description": "my first Lighthouse Labs project",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "mocha"
   },
-  "author": "",
+  "author": "jason chen",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.3.1",
