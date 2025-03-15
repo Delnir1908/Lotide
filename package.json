@@ -1,6 +1,6 @@
 {
   "name": "@delnir/lotide",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "my first Lighthouse Labs project",
   "main": "index.js",
   "directories": {
